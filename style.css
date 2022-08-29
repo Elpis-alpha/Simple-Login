@@ -1,0 +1,227 @@
+/* Fonts Size and Rem selection */
+
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 800px) {
+
+  html {
+    font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  html {
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+
+  html {
+    font-size: 13px;
+  }
+
+}
+
+@media screen and (max-width: 300px) {
+
+  html {
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 200px) {
+
+  html {
+    font-size: 11px;
+  }
+
+}
+
+@media screen and (max-width: 100px) {
+
+  html {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 80px) {
+
+  html {
+    font-size: 9px;
+  }
+
+}
+
+@media screen and (max-width: 50px) {
+
+  html {
+    font-size: 8px;
+  }
+
+}
+
+@media screen and (max-height: 400px) {
+
+  html {
+    font-size: 10px;
+  }
+
+}
+
+
+h1 {
+  font-size: 2pc;
+  line-height: 3pc;
+}
+
+h2 {
+  font-size: 1.8pc;
+  line-height: 3pc;
+}
+
+h3 {
+  font-size: 1.6pc;
+  line-height: 2.5pc;
+}
+
+h4 {
+  font-size: 1.4pc;
+  line-height: 2.5pc;
+}
+
+h5 {
+  font-size: 1.2pc;
+  line-height: 2pc;
+}
+
+h6 {
+  font-size: 1pc;
+  line-height: 1.8pc;
+}
+
+
+/* Fonts Size and Rem selection END */
+
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+/* Base Elements Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: inherit;
+  font-size: inherit;
+  word-break: break-word;
+  line-height: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1pc;
+  line-height: 2pc;
+  font-family: Main, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #fff;
+  color: #666;
+  overflow-x: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+body>.container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body>.container>form {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1pc;
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}
+
+
+.form-pack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  padding: .5pc 0;
+}
+
+input {
+  background-color: #e5e5e5;
+  padding: 0.2rem .5rem;
+  border: 0 none;
+  outline: 0 none;
+  width: 100%;
+  border-radius: 0.2rem;
+  padding-right: 2rem;
+  transition: background-color .5s;
+}
+
+.form-end {
+  width: 100%;
+}
+
+button {
+  margin-top: .7pc;
+  color: inherit;
+  border: 1px solid grey;
+  background-color: transparent;
+  outline: 0 none;
+  cursor: pointer;
+  padding: 0 .5rem;
+
+  width: 100%;
+  background-color: #3c73e9;
+  border: 0 none;
+  outline: 0 none;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0 .5rem;
+  cursor: pointer;
+  transition: background-color .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #173167;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #3c73e9;
+}
